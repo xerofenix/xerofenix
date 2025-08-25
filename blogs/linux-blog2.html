@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starting Your Linux Journey</title>
+  <link rel="stylesheet" href="../css/linux-blog2.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Starting Your Linux Journey</h1>
+      <p class="tagline">A complete beginner’s guide: what Linux is, where it came from, how to use it, and how to choose a distro.</p>
+    </div>
+  </header>
+
+  <main class="container prose">
+    <article>
+
+      <h2 id="intro">Introduction</h2>
+      <p>Welcome to the exciting world of Linux! Whether you're curious about open-source software, looking to break free from proprietary operating systems, or simply want to explore new computing possibilities, this comprehensive guide will help you take your first steps into the Linux ecosystem. From understanding what Linux is and how it came to be, to choosing the right distribution for your needs, we'll cover everything you need to know to start your Linux journey confidently.</p>
+
+      <h2 id="what-is-linux">What is Linux?</h2>
+      <p>Linux is a free, open-source operating system kernel that serves as the foundation for hundreds of different operating systems called “distributions” (distros). At its core, most users run GNU/Linux — the Linux kernel plus GNU tools — which together form a complete, functional operating system that powers devices from smartphones to supercomputers.</p>
+
+      <h2 id="origin">How Linux Came Into Existence</h2>
+      <p>Unix (1969) inspired a generation of operating systems but remained largely proprietary. In 1983, Richard Stallman started the GNU Project to build a free Unix-like OS; over time, GNU delivered compilers, libraries, and utilities — but not a kernel. In 1991, Linus Torvalds began a hobby kernel project that he released publicly; by combining the Linux kernel with GNU userspace, a complete free operating system (GNU/Linux) emerged. In 1992, Linux was relicensed under the GNU GPL, unlocking massive community collaboration. Linux 1.0.0 arrived in 1994, marking its maturity.</p>
+
+      <h2 id="architecture">Linux Architecture (High Level)</h2>
+      <ul>
+        <li><strong>User space:</strong> Applications, shells, and libraries (e.g., glibc).</li>
+        <li><strong>System call interface:</strong> The bridge between user programs and kernel services.</li>
+        <li><strong>Kernel space:</strong> Process scheduling, memory management, device drivers, filesystems, and networking.</li>
+        <li><strong>Hardware:</strong> CPU, memory, storage, and peripherals.</li>
+      </ul>
+
+      <h2 id="interfaces">Modes of Using Linux: CLI and GUI</h2>
+      <p>The same Linux system can be used in two primary ways. The CLI is precise and scriptable; the GUI is visual and beginner‑friendly.</p>
+
+      <!-- Side-by-side visual comparison -->
+      <div class="ui-compare">
+        <figure class="ui-card">
+          <figcaption>CLI (Command Line Interface)</figcaption>
+          <!-- License-free illustrative image (local placeholder). Replace src with your own screenshot if you like -->
+          <img src="https://camo.githubusercontent.com/1696434ec29e3db008f0d5cf4ef1f1fddcc87b6b981c8134e545df023822460c/68747470733a2f2f692e696d6775722e636f6d2f544747347458682e676966" alt="Linux terminal showing commands and outputs" />
+          <ul class="ui-points">
+            <li>Fast, precise, and automatable</li>
+            <li>Ideal for servers, development, and scripting</li>
+            <li>Uses minimal system resources</li>
+          </ul>
+        </figure>
+
+        <figure class="ui-card">
+          <figcaption>GUI (Graphical User Interface)</figcaption>
+          <!-- License-free illustrative image (local placeholder). Replace src with your own screenshot if you like -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/GNOME_Shell.png" alt="Linux desktop with panels, dock and windows" />
+          <ul class="ui-points">
+            <li>Point‑and‑click, easy to learn</li>
+            <li>Great for daily desktop use</li>
+            <li>Multiple desktop environments (GNOME, KDE, XFCE)</li>
+          </ul>
+        </figure>
+      </div>
+
+      <h2 id="distros">Distributions and Who They’re For</h2>
+
+      <h3>Beginner‑friendly daily drivers</h3>
+      <ul>
+        <li><strong>Ubuntu:</strong> Balanced, widely documented, great hardware support. Long‑Term Support (LTS) editions are ideal for stability.</li>
+        <li><strong>Linux Mint:</strong> Very familiar for Windows users (Cinnamon desktop), “works out of the box.”</li>
+        <li><strong>Zorin OS:</strong> Windows/macOS‑style layouts to ease transition; polished UX.</li>
+        <li><strong>elementary OS:</strong> macOS‑like elegance with a curated, minimalist approach.</li>
+      </ul>
+
+      <h3>For tech enthusiasts</h3>
+      <ul>
+        <li><strong>Fedora:</strong> Fast‑moving, showcases new open‑source tech; great for developers.</li>
+        <li><strong>Pop!_OS:</strong> Developer and creator‑focused; strong NVIDIA support; tiling workflow.</li>
+        <li><strong>Manjaro:</strong> Arch‑based with an easier on‑ramp; access to Arch User Repository (AUR).</li>
+      </ul>
+
+      <h3>For power users and experts</h3>
+      <ul>
+        <li><strong>Arch Linux:</strong> Minimal base and rolling release for full control; outstanding documentation (Arch Wiki).</li>
+        <li><strong>Gentoo:</strong> Source‑based with maximum customization and optimization.</li>
+        <li><strong>Debian:</strong> Rock‑solid stability, long release cycles; excellent for servers and desktops that value reliability.</li>
+        <li><strong>Alpine Linux:</strong> Security‑oriented, ultra‑lightweight; popular for containers and embedded use.</li>
+      </ul>
+
+      <h3>Specialized/server options</h3>
+      <ul>
+        <li><strong>Red Hat Enterprise Linux (RHEL):</strong> Commercial support, long‑term maintenance for enterprises.</li>
+        <li><strong>Ubuntu Server:</strong> Easy to deploy; strong cloud tooling and community/commercial support.</li>
+        <li><strong>Rocky/AlmaLinux:</strong> Enterprise‑grade RHEL rebuilds without licensing costs.</li>
+        <li><strong>Kali Linux:</strong> Security and penetration testing toolkit (for professionals and learners).</li>
+      </ul>
+
+      <h2 id="skills">Essential Concepts for Beginners</h2>
+      <ul>
+        <li><strong>Filesystem basics:</strong> /home, /etc, /usr, /var, /bin, /dev, /tmp, /mnt.</li>
+        <li><strong>Package managers:</strong> apt (Debian/Ubuntu), dnf (Fedora/RHEL), pacman (Arch/Manjaro).</li>
+        <li><strong>Users and permissions:</strong> root vs regular users; read/write/execute bits; sudo.</li>
+        <li><strong>Security hygiene:</strong> updates, least privilege, firewall, backups.</li>
+      </ul>
+
+      <h2 id="installation">Getting Started & Installation Tips</h2>
+      <ol>
+        <li><strong>Before:</strong> Back up data; verify hardware compatibility; download ISO; create a bootable USB (Rufus/Etcher).</li>
+        <li><strong>Install:</strong> Try Live mode; allocate at least ~30GB; consider a separate /home; set strong passwords.</li>
+        <li><strong>After:</strong> Update system; install needed apps; customize settings; learn basic terminal commands.</li>
+      </ol>
+
+      <h2 id="why-linux">Why Linux vs Proprietary OS (Windows/macOS)</h2>
+      <ul>
+        <li><strong>Privacy & transparency:</strong> Open source allows community auditing; minimal telemetry by default.</li>
+        <li><strong>Cost:</strong> No licensing fees; rich ecosystem of free software.</li>
+        <li><strong>Security & stability:</strong> Rapid fixes, multi‑user model, and modularity reduce attack surface.</li>
+        <li><strong>Customization & control:</strong> Choose desktop environment, workflow, packages — or even build from minimal base.</li>
+        <li><strong>Longevity:</strong> Lightweight options keep older hardware useful for years.</li>
+        <li><strong>Developer‑friendly:</strong> Native tooling, containers, servers, cloud — the de facto platform for modern devops.</li>
+      </ul>
+
+      <h2 id="learn">Learn More (Optional Recommendations)</h2>
+      <ul>
+        <li><strong>Book:</strong> Linux Basics for Hackers (OccupyTheWeb) — great practical intro with security‑focused exercises.</li>
+        <li><strong>Docs:</strong> Arch Wiki; Ubuntu Documentation; Linux Foundation training.</li>
+        <li><strong>Videos:</strong> Search “Ubuntu installation guide,” “Mint installation tutorial,” or “Linux dual‑boot tutorial.”</li>
+      </ul>
+
+      <p><em>Tip:</em> Start with Ubuntu or Linux Mint, experiment in Live mode, and grow from there. Every expert was once a beginner.</p>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <script>document.write(new Date().getFullYear())</script> • Starting Your Linux Journey | by Mohd Umair</small>
+    </div>
+  </footer>
+
+  <!-- added for mastodon blog varification -->
+   <meta name="fediverse:creator" content="@xero@floss.social">
+</body>
+</html>
